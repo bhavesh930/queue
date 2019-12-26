@@ -33,6 +33,6 @@ class SendRegistrationEmail implements ShouldQueue
     public function handle()
     {
         $email = new RegistrationEmail();
-        Mail::to('panseriya@simbanic.com')->send($email);
+        Mail::to('info@xyz.com')->send($email);   //panseriya@simbanic.com
     }
 }
